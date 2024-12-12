@@ -36,7 +36,7 @@ class ActorViewSet(viewsets.ModelViewSet):
 
 
 class MovieViewSet(viewsets.ModelViewSet):
-    queryset = Movie.objects.prefetch_related()
+    queryset = Movie.objects.all()
 
     def get_queryset(self):
         queryset = self.queryset
